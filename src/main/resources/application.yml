@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:hhstore}
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:123123}
+  jpa:
+    hibernate:
+      ddl-auto: ${MYSQL_DDL:update}
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+# config value cloudinary
+cloudinary:
+  cloud-name: dijbcqcmv
+  api-key: 571631848676488
+  api-secret: G56ed0qeKsz_nzA57aX_qeWSOCU
+# config security
+jwt:
+  secret-key: "d3775c0fefb657b49d334eacae493726e131ea10e36b9f8800185b05d210ddd4"
